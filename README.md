@@ -1,2 +1,2 @@
 # CS61B
-Data Structures implementation
+Simple implementation of CS61B Data Structures
