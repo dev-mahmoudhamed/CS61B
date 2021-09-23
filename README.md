@@ -1,2 +1,2 @@
 # CS61B
-Data Structures implementation
+Simple implementation of Berkeley CS61B Data Structures course
