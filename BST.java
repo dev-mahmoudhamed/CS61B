@@ -58,18 +58,26 @@ public class BST {
 		if (root.left == null && root.right == null) {
 			root = null;
 		}
-		
+
 		if (root.right == null) {
 			root.key = root.left.key;
 		} else if (root.left == null) {
 			root.key = root.right.key;
 		}
-		
+
+		else {
+			Hibbard_Deletion(root);
+		}
 	}
 
-	public static void main(String[] args) {
-		BST tree = new BST();
-
-
+	private void Hibbard_Deletion(Node root) {
+		Node successor = root.right;
+		while (successor.left != null) {
+			successor = successor.left;
+		}
+		root = successor;
+		if (successor.right != null) {
+			successor.key = successor.right.key;
+		}
 	}
 }
