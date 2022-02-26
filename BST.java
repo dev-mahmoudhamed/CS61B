@@ -1,4 +1,4 @@
-
+/* Simple implementation of Binary Search Tree*/
 public class BST {
 
 	private class Node {
